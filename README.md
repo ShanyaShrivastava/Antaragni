@@ -1,2 +1,2 @@
 # Antaragni
-Event management portal
+ Event Management Portal

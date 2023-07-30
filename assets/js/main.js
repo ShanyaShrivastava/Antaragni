@@ -5,6 +5,14 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+const div1Image = document.querySelector('#div1 img');
+const div1Text = document.querySelector('#div1 h2');
+
+window.addEventListener('load',function(e){
+  div1Image.classList.remove('reveal');
+  div1Text.classList.remove('reveal');
+})
+
 (function() {
   "use strict";
 

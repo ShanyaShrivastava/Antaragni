@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Pacifico&family=Playfair+Display:wght@600&family=Poppins&family=Roboto&family=Ubuntu&display=swap');
+
 *{
   border: 0;
   padding: 0;
@@ -7,7 +9,8 @@ body {
   font-family: cursive;
   height: 100%;
   width:100%;
-  background-color:#a51a47;
+  background-image: linear-gradient(to bottom right,#a51a47, #ff0000cb);
+  overflow-x: hidden;
 }
 
 a {
@@ -93,13 +96,11 @@ h6,
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
- 
   text-decoration: none;
 }
 
 #header .logo img {
   padding: 0;
-
   max-height: 50px;
 }
 
@@ -108,12 +109,12 @@ h6,
 }
 .navbar {
   padding: 0;
-  font-family: cursive;
+  font-family: 'Ubuntu';
   
 }
 
 .navbar ul {
-  font-family: cursive;
+  font-family: 'Ubuntu';
   margin: 0;
   padding: 0;
   display: flex;
@@ -133,7 +134,7 @@ h6,
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 20px;
   color: white;
   white-space: nowrap;
@@ -167,6 +168,7 @@ h6,
   font-family: cursive;
   box-shadow: 0px 0px 30px #f69061 ;
   transition: 0.3s;
+  background-color: rgba(0, 0, 0, 0.599);
 }
 
 .navbar .dropdown ul li {
@@ -175,7 +177,7 @@ h6,
 
 .navbar .dropdown ul a {
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: none;
   color: #f69061;
 }
@@ -187,7 +189,7 @@ h6,
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #f69061;
+  color: #ffffff;
 }
 
 .navbar .dropdown:hover>ul {
@@ -324,31 +326,38 @@ h6,
 }
 #div1{
   margin-top: 5%;
-  height: 100%;
+  height: 90vh;
   width: 100%;
-  overflow: hidden;
-  
+  display: flex;
+  align-items: center;
+  padding: 0px 50px 0px 100px;
 }
-.part1 img{
-  width:65%;
-  height: 600px;
-  float:right;
-  margin-right: 2%;
- }
- .part2{
-   position: absolute;
-   width: 400px;
-   left:5%;
-   top:35%;
- }
-.part2 h2{
-    font-size: 100px;
-    text-transform: uppercase;
-    color: white;
-    font-weight: 900;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 78px;
-    letter-spacing: 10px;
+#div1 img{
+  width:63%;
+  height: 60vh;
+  margin-left: 30px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.638);
+  transition: all 1s ease-in-out;
+}
+#div1 img.reveal{
+  transform: translateX(200px);
+  opacity: 0;
+}
+#div1 h2{
+  background-image: linear-gradient(to bottom right,#f9f9f8, #ddcebbcb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 10vw;
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 8px;
+  line-height: 150px;
+  transition: all 1s ease-in-out;
+  text-shadow: 3px 3px rgba(255, 255, 255, 0.367);
+}
+#div1 h2.reveal{
+  transform: translateX(-200px);
+  opacity: 0;
 }
 #main{
   width:100%;
@@ -527,6 +536,9 @@ h6,
   background: #8b3a3a9f;
   padding: 0 0 30px 0;
   font-size: 14px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
 }
 
 #footer .footer-top {
@@ -534,6 +546,7 @@ h6,
   border-top: 1px solid #c6a264;
   border-bottom: 1px solid #c6a264;
   color:#111;
+  
 }
 
 #footer .footer-top .footer-info {
@@ -648,3 +661,4 @@ h6,
 #footer .credits a {
   color: black;
 }
+
